@@ -1,0 +1,29 @@
+﻿<Window x:Class="TourAgentstvo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TourAgentstvo"
+        mc:Ignorable="d"
+        Title="TourAgent" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.ColumnSpan="2" Background="#FFF3C8F1"/>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Image Source="NewFolder1/log.png " MaxHeight="100" MaxWidth="100" Stretch="Fill" Width="100"/>
+            <TextBlock 
+                   Margin="40,47,0,46" 
+                   FontSize="32"  
+                   Foreground="#FF040304" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   FontFamily="Copperplate Gothic Light"><Run Text="Туристическое агенство"/></TextBlock>
+             
+
+        </StackPanel>
+        <Frame Grid.Row="1" Name="MainFrame"></Frame>
+    </Grid>
+</Window>
